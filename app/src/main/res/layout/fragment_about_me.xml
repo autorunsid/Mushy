@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/cardview_github_profile"
+  android:layout_width="match_parent"
+  android:layout_height="200dp"
+  android:layout_margin="8dp"
+  android:clickable="true"
+  android:focusable="true"
+  app:cardCornerRadius="20dp"
+  android:layout_gravity="center"
+  android:background="#80ffffff"
+  app:cardElevation="4dp">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <!-- GitHub Logo -->
+    <ImageView
+      android:id="@+id/image_github_logo"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/github"
+      android:contentDescription="GitHub Logo" />
+
+    <!-- Nama dan NIM -->
+    <TextView
+      android:id="@+id/text_nama_nim"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/image_github_logo"
+      android:layout_marginTop="9dp"
+      android:layout_centerHorizontal="true"
+      android:text="Nama: Muhammad Ridwan Wibisono\nNIM: 211351098"
+      android:textSize="16sp"
+      android:gravity="center"
+      android:paddingTop="8dp" />
+
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
